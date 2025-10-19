@@ -14,9 +14,19 @@ export default function About() {
 
             <SiteHeader />
             
-            <SiteTitle title="ばくだん焼きってなに？" />
+            <SiteTitle title="花火玉ってなに？" />
 
-            <p>ばくだん焼きについて説明</p>
+            <div className='flex justify-center'>
+                <div className='py-6 px-4 max-w-md'>
+                    花火のように中に入れる具材を栄養バランスを考え割った時に、
+                    楽しく召し上がれるように作りました。 
+                    直径8cmのたこ焼き5個分のボリュームです。
+                    見た目はたこ焼き、
+                    中身はお好み焼きともんじゃ焼きの様な外側はカリカリ、
+                    中はトロトロ、中に閉じ込めた具のうまさを逃がさず包み焼きします。
+                    焼きたての食感はとろとろですが、生焼けではありません。
+                </div>
+            </div>
 
             <SiteFooter/>
 

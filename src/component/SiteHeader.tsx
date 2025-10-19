@@ -17,7 +17,7 @@ const SiteHeader = () => {
                 </Link>
                 <Link href="/about">
                     <button className={buttonStyle}>
-                        ばくだん焼きってなに？
+                        花火玉ってなに？
                     </button>
                 </Link>
                 <Link href="/menu">
@@ -30,9 +30,6 @@ const SiteHeader = () => {
                 </button>
                 <button className={buttonStyle}>
                     栄養情報
-                </button>
-                <button className={buttonStyle}>
-                    会社概要
                 </button>
             </div>
         </header>
