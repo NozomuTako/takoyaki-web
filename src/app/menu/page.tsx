@@ -2,6 +2,7 @@ import Head from 'next/head'
 import SiteHeader from '@/component/SiteHeader'
 import SiteFooter from '@/component/SiteFooter'
 import SiteTitle from '@/component/SiteTitle'
+import MobileHeader from '@/component/MobileHeader';
 
 export default function Menu() {
     let menuList = [
@@ -37,7 +38,13 @@ export default function Menu() {
             <Head>
                 <title>もみたこ</title>
             </Head>
-            <SiteHeader />
+            <div className="block md:hidden">
+                <MobileHeader />    
+            </div>
+            <div className="hidden md:block">
+                <SiteHeader />
+            </div>
+
             <SiteTitle title="MENU" subtitle="メニュー一覧" />
 
             

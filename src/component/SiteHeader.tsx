@@ -25,12 +25,6 @@ const SiteHeader = () => {
                         メニュー
                     </button>
                 </Link>
-                <button className={buttonStyle}>
-                    店舗紹介
-                </button>
-                <button className={buttonStyle}>
-                    栄養情報
-                </button>
             </div>
         </header>
     )

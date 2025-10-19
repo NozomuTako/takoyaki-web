@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import SiteHeader from '@/component/SiteHeader'
 import SiteFooter from '@/component/SiteFooter'
+import MobileHeader from '@/component/MobileHeader'
 
 
 const newsItems = [
@@ -19,9 +20,12 @@ export default function Home() {
         <title>もみたこ</title>
       </Head>
 
-      
-
-      <SiteHeader />
+      <div className="block md:hidden">
+          <MobileHeader />    
+      </div>
+      <div className="hidden md:block">
+          <SiteHeader />
+      </div>
 
 
       <main className="max-w-3xl mx-auto px-4 py-8">

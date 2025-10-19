@@ -2,6 +2,7 @@ import Head from 'next/head'
 import SiteHeader from '@/component/SiteHeader'
 import SiteFooter from '@/component/SiteFooter'
 import SiteTitle from '@/component/SiteTitle'
+import MobileHeader from '@/component/MobileHeader'
 
 export default function About() {
     return (
@@ -10,9 +11,12 @@ export default function About() {
                 <title>もみたこ</title>
             </Head>
 
-            
-
-            <SiteHeader />
+            <div className="block md:hidden">
+                <MobileHeader />    
+            </div>
+            <div className="hidden md:block">
+                <SiteHeader />
+            </div>
             
             <SiteTitle title="花火玉ってなに？" />
 
